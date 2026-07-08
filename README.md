@@ -35,6 +35,7 @@ Dense (1, Sigmoid) → Positive / Negative
 ```
 sentiment-analysis-lstm/
 ├── main.py                    # Entry point — trains, evaluates, demos the model
+├── app.py                      # Streamlit web demo
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Project documentation
 ├── .gitignore
@@ -87,7 +88,14 @@ This will:
 4. Save the trained model to `models/`, training curve plots to `outputs/plots/`, and metrics to `outputs/metrics/`
 5. Run predictions on a few sample sentences
 
-### 3. Run tests
+### 3. Run the Streamlit demo
+Once you've trained a model at least once (step 2 above saves it to `models/`), launch the interactive web demo:
+```bash
+streamlit run app.py
+```
+This opens a browser tab where you can type any review and get a live Positive/Negative prediction with a confidence score.
+
+### 4. Run tests
 ```bash
 pytest tests/
 ```
@@ -127,6 +135,7 @@ Test Accuracy: 0.87xx
 - NumPy
 - Matplotlib
 - Pytest
+- Streamlit
 
 ## 📈 Possible Extensions
 
