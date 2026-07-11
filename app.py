@@ -15,10 +15,7 @@ import tensorflow as tf
 from src import config
 from src.data_loader import get_word_index
 from src.predict import predict_sentiment
-
-# ----------------------------
 # Page setup
-# ----------------------------
 st.set_page_config(
     page_title="Sentiment Analysis - LSTM",
     page_icon="🎬",
@@ -32,9 +29,7 @@ st.write(
     "positive or negative."
 )
 
-# ----------------------------
 # Load model + word index (cached so this runs only once, not on every interaction)
-# ----------------------------
 @st.cache_resource
 def load_trained_model():
     if not os.path.exists(config.MODEL_PATH):
@@ -57,9 +52,7 @@ if model is None:
     )
     st.stop()
 
-# ----------------------------
 # Input + prediction
-# ----------------------------
 review_text = st.text_area(
     "Enter a movie review:",
     placeholder="e.g. This movie was a complete waste of time...",
@@ -84,9 +77,7 @@ if analyze_clicked:
         st.progress(float(prob))
         st.caption(f"Raw model output (probability of positive sentiment): {prob:.4f}")
 
-# ----------------------------
 # Sample reviews for quick testing
-# ----------------------------
 st.divider()
 st.subheader("Try a sample review")
 
