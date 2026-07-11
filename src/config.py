@@ -5,10 +5,7 @@ across files) makes the project easy to tune and reproduce.
 """
 
 import os
-
-# ----------------------------
 # Paths
-# ----------------------------
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 MODELS_DIR = os.path.join(BASE_DIR, "models")
@@ -20,9 +17,7 @@ MODEL_PATH = os.path.join(MODELS_DIR, "sentiment_lstm_model.h5")
 TRAINING_CURVES_PATH = os.path.join(PLOTS_DIR, "training_curves.png")
 METRICS_PATH = os.path.join(METRICS_DIR, "metrics.json")
 
-# ----------------------------
-# Data / model hyperparameters
-# ----------------------------
+# Hyperparameters
 VOCAB_SIZE = 10000
 MAX_LEN = 200
 EMBEDDING_DIM = 128
@@ -32,9 +27,7 @@ DROPOUT_RATE = 0.3
 SPATIAL_DROPOUT_RATE = 0.2
 RECURRENT_DROPOUT_RATE = 0.2
 
-# ----------------------------
 # Training hyperparameters
-# ----------------------------
 BATCH_SIZE = 64
 EPOCHS = 10
 VALIDATION_SPLIT = 0.2
