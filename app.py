@@ -15,6 +15,10 @@ import tensorflow as tf
 from src import config
 from src.data_loader import get_word_index
 from src.predict import predict_sentiment
+<<<<<<< HEAD
+=======
+
+>>>>>>> b743633 (Final : Added plot,results,model)
 # Page setup
 st.set_page_config(
     page_title="Sentiment Analysis - LSTM",
@@ -51,8 +55,12 @@ if model is None:
         "Run `python main.py` first to train and save the model."
     )
     st.stop()
+<<<<<<< HEAD
 
 # Input + prediction
+=======
+# Input 
+>>>>>>> b743633 (Final : Added plot,results,model)
 review_text = st.text_area(
     "Enter a movie review:",
     placeholder="e.g. This movie was a complete waste of time...",
@@ -78,6 +86,10 @@ if analyze_clicked:
         st.caption(f"Raw model output (probability of positive sentiment): {prob:.4f}")
 
 # Sample reviews for quick testing
+<<<<<<< HEAD
+=======
+
+>>>>>>> b743633 (Final : Added plot,results,model)
 st.divider()
 st.subheader("Try a sample review")
 

@@ -7,7 +7,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 from src import config
 
-
 def load_data():
     """Load the IMDB dataset and pad sequences to a fixed length.
 

@@ -1,8 +1,5 @@
 """
-Main entry point: trains, evaluates, and demos the sentiment LSTM model.
-
-Usage:
-    python main.py
+Main entry point: trains, evaluates, and demos the sentiment LSTM model
 """
 
 from src import config
