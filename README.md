@@ -1,4 +1,4 @@
-# Sentiment Analysis using LSTM 🎬🧠
+# Sentiment Analysis using LSTM
 
 A deep learning project that classifies movie reviews as **positive** or **negative** using a Long Short-Term Memory (LSTM) neural network built with TensorFlow/Keras, trained on the IMDB dataset of 50,000 labeled reviews.
 
