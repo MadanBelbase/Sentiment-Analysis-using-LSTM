@@ -2,7 +2,7 @@
 
 A deep learning project that classifies movie reviews as **positive** or **negative** using a Long Short-Term Memory (LSTM) neural network built with TensorFlow/Keras, trained on the IMDB dataset of 50,000 labeled reviews.
 
-## 🔍 Overview
+## Overview
 
 This project demonstrates an end-to-end NLP pipeline:
 - Text preprocessing and sequence padding
@@ -12,7 +12,7 @@ This project demonstrates an end-to-end NLP pipeline:
 - Model evaluation, training curve visualization, and inference on custom text
 - Modular, testable code structure (not a single notebook dump)
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 ```
 Input (word IDs, len=200)
@@ -30,7 +30,7 @@ Dropout (0.3)
 Dense (1, Sigmoid) → Positive / Negative
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 sentiment-analysis-lstm/
@@ -65,7 +65,7 @@ sentiment-analysis-lstm/
     └── metrics/                  # Saved evaluation metrics (JSON)
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone and set up environment
 ```bash
@@ -109,7 +109,7 @@ Test Accuracy: 0.87xx
 'It was an okay movie, nothing special but not bad either' -> Positive (0.6104)
 ```
 
-## 📊 Results
+##  Results
 
 | Metric          | Score   |
 |-----------------|---------|
@@ -118,7 +118,7 @@ Test Accuracy: 0.87xx
 
 *(exact numbers vary run to run due to random initialization)*
 
-## 🧠 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 
 - **Word Embeddings** – dense vector representations of words learned during training
 - **Recurrent Neural Networks (LSTM)** – handling sequential/contextual dependencies in text
@@ -128,7 +128,7 @@ Test Accuracy: 0.87xx
 - **Modular software design** – separated config, data, model, training, and inference logic
 - **Unit testing** – pytest tests validating model construction
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - Python 3.x
 - TensorFlow / Keras
@@ -137,7 +137,7 @@ Test Accuracy: 0.87xx
 - Pytest
 - Streamlit
 
-## 📈 Possible Extensions
+##  Possible Extensions
 
 - Swap the built-in Embedding layer for pretrained **GloVe** or **Word2Vec** vectors
 - Replace LSTM with **Bidirectional LSTM** or **GRU** for comparison
@@ -146,6 +146,6 @@ Test Accuracy: 0.87xx
 - Extend to multi-class sentiment (e.g., 1–5 star ratings)
 - Swap in a custom CSV dataset using `src/data_loader.py` as the integration point
 
-## 📄 License
+##  License
 
 MIT License — free to use and modify.
